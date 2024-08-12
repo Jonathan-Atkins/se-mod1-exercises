@@ -95,7 +95,7 @@ RSpec.describe 'Strings' do
   it 'test 11' do
     rhyme = "eeny, meeny, miny, moe"
     # In place of the line below, call a method to achieve the expected output.
-    actual = rhyme.gsub(/[eio]/,'')
+    actual = rhyme.gsub(/[eio]/,"")
     expected = "ny, mny, miny, mo"
 
     expect(actual).to eq(expected)
