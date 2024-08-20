@@ -1,0 +1,11 @@
+# puts "Hi 2408 students"
+
+# def get_caluculation (num1,num2)
+#     answer = (num1 + num2) * 3.5 / 2.3
+#     answer = answer.round(0)
+# end
+
+# puts get_caluculation(1,2)
+
+
+]

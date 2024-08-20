@@ -43,6 +43,7 @@ RSpec.describe 'Arrays' do
 
   it 'test 3' do
     hummus = ["tahini", "chickpeas", "lemons"]
+    hummus.length
     # Call a method on the hummus variable that will
     # tell us how many elements there are in the array
     expect(hummus.length).to eq(3)
@@ -172,7 +173,6 @@ RSpec.describe 'Arrays' do
     # Call a method on the dice variable to get a random element out
     # of the array
     roll = dice.sample
-    require 'pry'; binding.pry
     expect(roll <= 6).to eq(true)
     expect(roll >= 1).to eq(true)
     # Note, this assertion assumes the Ruby Version is 2.4 or higher.
