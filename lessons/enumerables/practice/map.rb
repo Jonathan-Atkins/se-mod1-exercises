@@ -4,9 +4,10 @@
 
 def capitalize
     names = ["alice", "bob", "charlie"]
-
-    # Your code goes here
-
+    name = names.map do |name|
+        puts name.capital
+    end
+    
     # expected return value is ["Alice", "Bob", "Charlie"]
 end
 
@@ -67,7 +68,7 @@ def trim_last_letter
 end
 
 
-# p capitalize
+p capitalize
 # p doubles
 # p squares
 # p lengths

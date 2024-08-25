@@ -9,8 +9,9 @@ describe Painter do
     expect(painter).to be_a(Painter)
   end
 
-  xit 'test_it_has_a_name1' do
-    painter = Painter.new(the_painters_name)
+  it 'test_it_has_a_name1' do
+    painter = Painter.new("Bob Ross")
+
 
     expect(painter.name).to eq("Bob Ross")
   end

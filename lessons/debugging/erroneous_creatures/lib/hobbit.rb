@@ -8,6 +8,7 @@ class Hobbit
     @disposition = disposition
     @age = 0
     @tiredness = 0
+    @moonrocks
   end
 
   def celebrate_birthday
