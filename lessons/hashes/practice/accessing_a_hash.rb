@@ -3,7 +3,7 @@ suitcase = {
   "pants" => 1
 }
 
-# How would we get the value of:
+puts suitcase.values
 
 # 1. "socks"
 # 2. "pants"
