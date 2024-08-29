@@ -7,12 +7,19 @@ class Medusa
     end
 
     def stare(victim)
+        victim.stoned = true
         @statues << victim
+        if @statues.count > 3
+            unstoned_victim = @statues.shift
+            unstoned_victim.stoned = false 
+        end
     end
 end
 
 class Person
-    attr_reader :name, :stoned
+    attr_reader :name
+    attr_accessor :stoned
+    
     def initialize(name)
         @name = name
         @stoned = false
@@ -21,9 +28,4 @@ class Person
     def stoned?
         @stoned
     end
-
-    def updated_stoned_status(medusa)
-        @stoned = medusa.statues.includes?(@name)
-    end
-
 end
