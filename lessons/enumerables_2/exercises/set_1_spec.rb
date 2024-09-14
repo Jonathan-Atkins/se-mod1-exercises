@@ -1,7 +1,7 @@
 # Finish writing the test to make the assertion pass.
 # Use the min, max, min_by, and max_by methods.
 
-describe "#min/#max/#min_by/#max_by" do 
+RSpec.describe "#min/#max/#min_by/#max_by" do 
   it "returns the smallest value in the array" do 
     numbers = [8, 23, 7, 29, 9, 10]
 
@@ -29,8 +29,8 @@ describe "#min/#max/#min_by/#max_by" do
   it "returns the shortest name" do 
     names = ["Leonardo", "Donatello", "Michaelangelo", "Raphael"]
 
-    longest_name = names.min_by do |name|  #or longest_name = names.min_by(&:length)
-      name.length
+    longest_name = names.min_by(&:length) #names.min_by do |name| 
+      #name.length
     end
 
     expect(longest_name).to eq("Raphael")

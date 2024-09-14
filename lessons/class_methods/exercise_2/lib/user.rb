@@ -4,9 +4,12 @@ require "pry"
 
 class User
   attr_reader :name
+  @@users = []
+
   def initialize(name)
     @name = name
-    #binding.pry ##What is the @name property?
+    @@users << self.name
+    binding.pry ##What is the @name property?
   end
 
   def say_hello
@@ -20,4 +23,9 @@ class User
       #binding.pry ## What is new_user? What properties does it have?
     end
   end
+
+  def self.all_users
+    @@users
+  end
+
 end
